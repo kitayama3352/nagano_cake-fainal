@@ -67,7 +67,7 @@ class OrdersController < ApplicationController
   def thanks
   end
 
-  private
+private
   def order_params
     params.require(:order).permit(
       :customer_id,    :delivery_zip_code, :delivery_address,

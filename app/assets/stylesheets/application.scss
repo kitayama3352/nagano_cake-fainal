@@ -89,7 +89,7 @@ header{
 .genre_search{
   text-align: center;
   background-color: white;
-  border: solid #808080;
+  border: 2px solid #dcdcdc;
   padding: 10px;
 }
 
@@ -97,7 +97,7 @@ header{
   padding-left: 10px;
 }
 .about{
-  border: thick double #808080;
+ border: 2px solid #dcdcdc;
   background: url(full-bloom.png);
 }
 .about-image{
@@ -108,14 +108,11 @@ header{
 }
 
 .about-visual {
-  width: 80%;
-  height: 400px;
-  background-size: 100% 100%;
-  border: solid;
 }
+
 .card-body{
    height: 300px;
-   border: thick double #808080;
+   border: 2px solid #dcdcdc;
    border-radius: 30px;
 }
 .top-text{
@@ -123,7 +120,7 @@ header{
 }
 
 .top-new{
-   border: thick double #808080;
+   border: 2px solid #dcdcdc;
    padding: 10px;
 }
 

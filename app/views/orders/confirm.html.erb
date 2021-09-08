@@ -18,7 +18,7 @@
         <tbody>
         <% @cart_items.each do |cart| %>
         <tr>
-          <th><%= attachment_image_tag cart.item, :image, :fill, 80, 50, fallback: "no-image.jpg", size: "80x50" %> <%= cart.item.name %></th>
+          <th><%= cart.item.name %></th>
           <td class="align-middle"><%= cart.item.tax_include_price.to_s(:delimited) %></th>
           <td class="align-middle"><%= cart.product_amount %></th>
           <td class="align-middle"><%= (cart.item.tax_include_price * cart.product_amount).to_s(:delimited) %></th>
