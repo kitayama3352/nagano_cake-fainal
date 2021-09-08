@@ -10,7 +10,7 @@ class Admins::OrdersController < ApplicationController
     order = Order.find(params[:id])
     order.update(order_params)
     if order.order_status == "入金確認"
-      OrderItem.where(order_id: order.id).update_all(production_status: "制作待ち")
+      OrderItem.where(order_id: order.id).update_all(production_status: "製作待ち")
     end
     redirect_back(fallback_location: root_path)
   end
