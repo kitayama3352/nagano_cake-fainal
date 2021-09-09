@@ -61,7 +61,7 @@
           <% @order_items.each do |order_item| %>
             <tr>
               <td><%= order_item.item.name %></td>
-              <td><%= order_item.purchase_price %></td>
+              <td><%= order_item.item.tax_include_price.to_s(:delimited)%></td>
               <td><%= order_item.amount %></td>
               <td><%= (order_item.purchase_price * order_item.amount).to_s(:delimited, delimiter: ',') %></td>
               <%= form_with model: [:admins, order_item], method: :patch, local: true do |f| %>
